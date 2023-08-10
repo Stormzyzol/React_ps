@@ -1,19 +1,11 @@
 import '@/styles/globals.css'
 import Cards from '../components/cards'
-import Navbar from '../components/navbar/navbar'
-import NavItems from "../components/navbar/navitems"
+
 
 export default function App() {
 return (
 <div>
-  <Navbar>
-    <NavItems
-    icon="Inicio"/>
-    <NavItems
-    icon="Nacionalidades"/>
-    <NavItems
-    icon="Times"/>
-  </Navbar>
+
   <div className='wrapper'>
     
     <Cards

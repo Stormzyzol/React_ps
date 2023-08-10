@@ -37,7 +37,6 @@ ul{
 
 a{
   color:var(--text-color);
-  text-decoration: none;
 }
 
 .wrapper{
@@ -46,6 +45,7 @@ a{
   gap: 1.2rem;
   grid-template-columns: repeat(auto-fit,minmax(12rem,14rem));
   justify-content: center;
+  
   
 }
 

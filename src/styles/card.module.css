@@ -76,7 +76,7 @@
         flex-direction: row;
         width: 90vw;
         height: fit-content;
-        max-height: 150px;
+        max-height: 160px;
         min-height: 100px;
     }
 
@@ -98,7 +98,7 @@
 
     .card_btn{
 
-        font-size: 15px;
+        font-size: 17px;
        
         
     }
@@ -121,7 +121,7 @@
 
     .card_btn{
 
-        font-size: 12px;
+        font-size: 15px;
        
         
     }
