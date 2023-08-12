@@ -5,8 +5,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Iso&display=swap");
 
+  @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
+:root{
+  --light: white;
+  --dark: black;
+  --gray: gray;
+  --first: rgb(12, 20, 69);
+  --secound: rgb(71, 30, 84);
+  --third: #0b001d;
+  --fourth:#0e024e;
+  --fifth: #0f05a000;
+  --sixth: #65429c;
+  --seventh:#9e4784;
+  --eigth:#37306b;
+  --ninth: rgba(3,0,61,1);
+  --tenth: rgba(50,0,57,1);
+  --eleventh: #fdbeff;
+  --twelfth:rgba(3,0,61,1);
+  --thirteenth:rgba(57,0,112,1);
+}
 
 
 
@@ -15,8 +34,8 @@ body{
   margin: 0;
   padding: 0;
   font-family:  "Ubuntu", sans-serif;
-  color: rgb(255, 255, 255);
-  background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
+  color: var(--light);
+  background: linear-gradient(179.4deg, var(--first) -16.9%, var(--secound) 119.9%);
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -30,7 +49,7 @@ ul{
 }
 
 a{
-  color:white;
+  color:var(--light);
   text-decoration: none;
   font-family:  "Ubuntu", sans-serif;
 
@@ -47,9 +66,13 @@ a{
   
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 600px){
     .wrapper{
       grid-template-columns: 1fr;
       
+    }
+
+    .nav_item{
+      display: none;
     }
 }

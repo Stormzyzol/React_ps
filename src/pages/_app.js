@@ -14,7 +14,8 @@ return (
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <Navbar
-  logo="https://emojitool.com/img/htc/sense-7/soccer-ball-483.png">
+  logo="https://emojitool.com/img/htc/sense-7/soccer-ball-483.png"
+ >
   <NavItems
     link="#"
     icon="Inicio"/>
@@ -51,9 +52,6 @@ return (
     </NavItems>
 
 
-  <NavItems
-      link="javascript:;"
-      icon="Darkmode"/>
   </Navbar>
 
   <div className='wrapper'>
