@@ -1,10 +1,60 @@
 import '@/styles/globals.css'
 import Cards from '../components/cards'
-
+import Navbar from '../components/navbar/navbar'
+import NavItems from '../components/navbar/navitems'
+import Dropdown from "../components/navbar/dropdown"
 
 export default function App() {
 return (
 <div>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <Navbar
+  logo="https://emojitool.com/img/htc/sense-7/soccer-ball-483.png">
+  <NavItems
+    link="#"
+    icon="Inicio"/>
+
+    <NavItems
+    link="#0"
+    icon="Time">
+      <Dropdown
+     link="#"
+     children="Cruzeiro"/> 
+     <Dropdown
+     link="#"
+     children="Atletico"/> 
+     <Dropdown
+     link="#"
+     children="Flamengo"/> 
+     
+    </NavItems>
+
+    <NavItems
+    link="javascript:;"
+    icon="Nacionalidade"
+    >
+     <Dropdown
+     link="#"
+     children="Brasileiro"/> 
+     <Dropdown
+     link="#"
+     children="Argentino"/> 
+     <Dropdown
+     link="#"
+     children="Chileno"/> 
+     
+    </NavItems>
+
+
+  <NavItems
+      link="javascript:;"
+      icon="Darkmode"/>
+  </Navbar>
 
   <div className='wrapper'>
     
