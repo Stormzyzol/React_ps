@@ -3,9 +3,12 @@ import Cards from '../components/cards'
 import Navbar from '../components/navbar/navbar'
 import NavItems from '../components/navbar/navitems'
 import Dropdown from "../components/navbar/dropdown"
+import FooterM from '../components/footer/footer'
 
 export default function App() {
 return (
+
+
 <div>
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -15,10 +18,12 @@ return (
 
   <Navbar
   logo="https://emojitool.com/img/htc/sense-7/soccer-ball-483.png"
- >
+  >
   <NavItems
     link="#"
-    icon="Inicio"/>
+    icon="Inicio">
+      
+    </NavItems>
 
     <NavItems
     link="#0"
@@ -112,7 +117,7 @@ return (
     age="31"
     nationality="Brasileiro"/>
 
-  <Cards
+  <Cards 
     img="https://conteudo.imguol.com.br/c/esporte/b8/2022/10/11/vini-jr-do-real-madrid-em-jogo-contra-o-shakhtar-pela-liga-dos-campeoes-1665522959902_v2_1x1.jpg"
     name="Vini Jr"
     team="Real Madrid"
@@ -127,6 +132,26 @@ return (
     nationality="Brasileiro"/>
     
   </div>
+
+  <footer>
+    <FooterM
+    name="FuteInfo"
+    slogan="O Futebol está aqui"
+    social1="fa-brands fa-instagram"
+    social2="fa-brands fa-twitter"
+    social3="fa-brands fa-linkedin-in"
+    link1="#"
+    link2="#"
+    link3="#"
+    link4="#"
+    empresa1="Central de Noticias"
+    empresa2="Nosso App"
+    parceria1="Coca-Cola"
+    parceria2="Rexona"></FooterM>
+  </footer>
+
 </div>
+
 )
 }
+

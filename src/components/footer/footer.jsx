@@ -1,43 +1,61 @@
+import style from '../../styles/footer.module.css'
+
 export default function footer(props){
     return(
-    <footer>
-        <div class="footer-content">
+       <div>
+
     
-            <div class="contacts">
+        <div className={style.footer_content}>
+            
+            <div className={style.contacts}>
                 <h1>{props.name}</h1>
                 <p>{props.slogan}</p>
-                <div class="social-media">
-                    {props.socials}
+                <div className={style.social_media}>
+                    <a href="#" className={style.social_link} id='instagram'><i class={props.social1}></i></a>
+                    <a href="#" className={style.social_link} id='twitter'><i class={props.social2}></i></a>
+                    <a href="#" className={style.social_link} id='linkedin'><i class={props.social3}></i></a>
                 </div>
             </div>
-
-            <ul class="list">
-            
+    
+            <ul className={style.list}>
+              
                 <li>
                     <h3>Nossa Empresa</h3>
                 </li>
-                {props.extra}
-            </ul>
-
-            <ul class="list">
                 <li>
-                    <h3>Parceirias</h3>
+                    <a href={props.link1} className="sobre-link">{props.empresa1}</a>
                 </li>
-                
-                {props.partners}
-
+                <li>
+                    <a href={props.link2} className="sobre-link">{props.empresa2}</a>
+                </li>
+    
             </ul>
-
-
-
-
+    
+            <ul className={style.list}>
+                <li>
+                    <h3>Parcerias</h3>
+                </li>
+                <li>
+                    <a href={props.link3} className="sobre-link">{props.parceria1}</a>
+                </li>
+                <li>
+                    <a href={props.link4} className="sobre-link">{props.parceria2}</a>
+                </li>
+               
+    
+            </ul>
+     
+    
+    
+    
         </div>
-
-        <div class="copyright">
-            &#169
-            {props.year}, Feito com amor por {props.name}
+    
+        <div className={style.copyright}>
+           @ 2023, Feito com amor por Adapti Soluções Web
         </div>
-</footer>
+    
+       </div>
+
 
     )
 }

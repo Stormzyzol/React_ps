@@ -1,7 +1,16 @@
+import { useRef } from 'react'
 import style from '../../styles/navbar.module.css'
 
 
 export default function navbar(props){
+    const navref = useRef()
+    const hamref = useRef()
+    const showNavbar = () => {
+        navref.current.classList.toggle(style.active)
+        hamref.current.classList.toggle(style.is_active)
+    
+
+    }
     return(
 
         <nav className={style.navbar}>
@@ -16,23 +25,16 @@ export default function navbar(props){
                             </span></button>
                     </div>
 
-                <div className={style.nav_links}>
+                <div className={style.nav_links} ref={navref}>
 
                     
                     {props.children}
-                    <li className={style.nav_item}>
-                        <a href="javascript:;" className={style.icon_button}>
-                        <span class="material-symbols-outlined">
-                        dark_mode
-                        </span>
-                        </a>
                     
-                    </li>
                 </div>
 
                 <li className={style.nav_item}>
 
-                    <div className={style.hamburguer}>
+                    <div className={style.hamburguer} ref={hamref} onClick={showNavbar}>
                         <span></span>
                         <span></span>
                         <span></span>

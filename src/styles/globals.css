@@ -55,6 +55,22 @@ a{
 
 }
 
+footer {
+  width: 100%;
+  color: var(--light);
+  align-items: center;
+  justify-content: center;
+}
+
+
+h1 {
+  color: var(--light);
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+
+
 .wrapper{
   margin: 2rem;
   display: grid;

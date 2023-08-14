@@ -36,8 +36,8 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-left: 20px;
-    margin-right: 10px;
+    margin-left: 25px;
+    margin-right: 15px;
 
 }
 
@@ -174,12 +174,12 @@
     transform: translateX(10px);
 }
 
-.hamburguer.is-active span {
+.hamburguer.is_active span {
     transform: translateX(-10px);
     background-color: var(--sixth);
 }
 
-.hamburguer.is-active span:nth-child(2) {
+.hamburguer.is_active span:nth-child(2) {
     transform: translateX(10px);
 }
 
@@ -197,6 +197,9 @@
     }
 
     .nav_links{
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
         width: 50%;
         top: 61.5px;
@@ -206,12 +209,13 @@
         background: red;
         border-radius: 0 0 10px 10px;
         text-align:center;
-    border-top: 3px solid var(--seventh);
-    border-bottom: 3px solid var(--seventh);
-    box-shadow: 0 5px 5px 0 var(--eigth);
-    background: linear-gradient(90deg, var(--ninth) 0%, var(--tenth) 100%);
-    pointer-events: none;
-    transition: all 2s ease;
+        border-top: 3px solid var(--seventh);
+        border-bottom: 3px solid var(--seventh);
+        box-shadow: 0 5px 5px 0 var(--eigth);
+        background: linear-gradient(90deg, var(--ninth) 0%, var(--tenth) 100%);
+        pointer-events: none;
+        transition: all 1s ease,max-height 0.8s ease-in-out;
+
 
 
         
@@ -236,11 +240,18 @@
         right: 100%;
         box-shadow: 0 5px 0 0 var(--eigth);
         background:var(--ninth) ;
+        height: 100%;
+        width: 100%;
+        min-width: fit-content;
+        text-align: center;
+        align-content: center;
+        align-items: center;
 
     }
 
     .dropdown{
-        margin: 32.25px auto;
+        margin: 20px auto;
+        vertical-align: middle;
     }
 
     .drop_div > .dropdown > a{
@@ -252,6 +263,15 @@
 
     .nav_links:hover{
         border-radius: 0 0 10px 0;
+    }
+
+    .active{
+        visibility: visible;
+        opacity: 1;
+        max-height: 1000px;
+        transition: all 1.5s ease,max-height 1s ease-in-out;
+
+
     }
 
     
